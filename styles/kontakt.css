@@ -7,15 +7,16 @@ body {
 }
 header {
     background-color: rgb(58, 58, 58);
-    /* box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25); */
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
+    height: 16vh;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    overflow: hidden;
 }
 nav ul {
     display: flex;
@@ -53,8 +54,9 @@ nav ul li a:hover {
 }
 h1 {
     text-align: center;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    margin-bottom: 1.5%;
+    padding-top: 8vh;
+    color: #333;
 }
 
 .brodtext{
@@ -78,3 +80,13 @@ h1 {
     width: 100%;
     color: black;
 }
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 9vh;
+    }
+
+    h1 {
+        padding-top: 5vh;
+    }
+  }
