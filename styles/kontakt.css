@@ -111,3 +111,6 @@ h1 {
     cursor: pointer;
     margin-left: 100px;
 }
+.style{
+    font-style: italic;
+}
