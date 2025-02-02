@@ -229,17 +229,27 @@ h1 {
     }
   }
 
-.checklist {
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
+  .checklist {
+    width: 90%;
+    border-collapse: collapse;
 }
 
-.checklist li {
+.checklist tr {
     display: flex;
     align-items: center;
-    margin: 10px 10px; 
+}
+
+.checklist td {
+    padding: 5px;
     font-size: 15px;
+}
+
+.check {
+    color: lightgreen;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: center;
+    width: 25px;
 }
 
 .check { 
