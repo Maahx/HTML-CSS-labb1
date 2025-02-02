@@ -63,6 +63,9 @@ h1 {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .ad-1 {
@@ -77,6 +80,8 @@ h1 {
 
 .intro-text {
     width: 55vw;
+    border-top: solid 1px #333;
+    padding-top: 1.3vh;
 }
 
 .prod-butt {
@@ -98,13 +103,13 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10vw, 20vw));
+    grid-template-columns: repeat(auto-fill, minmax(10vw, 21vw));
     padding: 0;
     gap: 0;
 }
 .box{
     transition: transform 0.2s ease;
-    border: 2px solid black;
+    overflow-x: scroll;
 }
 .box:hover{
     transform: scale(1.05);
@@ -116,8 +121,8 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    width: 20vw;
+    height: 82vh;
+    width: 21vw;
     text-align: center;
     box-sizing: border-box;
 }
@@ -127,8 +132,8 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    width: 20vw;
+    height: 82vh;
+    width: 21vw;
     text-align: center;
     box-sizing: border-box;
 }
@@ -138,8 +143,8 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    width: 20vw;
+    height: 82vh;
+    width: 21vw;
     text-align: center;
     box-sizing: border-box;
 }
@@ -150,8 +155,23 @@ h1 {
 }
 
 .info-box-text {
-    width: 80%;
+    width: 90%;
     flex-grow: 1;
+    list-style: none;
+    text-align: left;
+    text-wrap: wrap;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.info-box-text li {
+    margin-bottom: 1%;
+    text-indent: -1.5rem;
+    padding-left: 1.5rem;
+}
+
+.check {
+    color: green;
 }
 
 .box-img {
@@ -210,14 +230,21 @@ h1 {
     h1 {
         padding-top: 5vh;
     }
+
+    .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(10vw, 20vw));
+    }
     #box1 {
         height: 65vh;
+        width: 20vw;
     }
     #box2 {
         height: 65vh;
+        width: 20vw;
     }
     #box3 {
         height: 65vh;
+        width: 20vw;
     }
 
     .info-knapp {
