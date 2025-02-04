@@ -124,30 +124,30 @@ h1 {
     text-align: center;
     box-sizing: border-box;
 }
-.info-box-title {
-    align-self: flex-start;
-    align-self: center;
-}
 
-.info-box-text {
+.checklist {
     width: 90%;
-    flex-grow: 1;
-    list-style: none;
-    text-align: left;
-    text-wrap: wrap;
-    padding-left: 0;
-    margin-left: 0;
+    border-collapse: collapse;
 }
 
-.info-box-text li {
-    margin-bottom: 1%;
-    text-indent: -1.5rem;
-    padding-left: 1.5rem;
+.checklist tr {
+    display: flex;
+    align-items: center;
+}
+
+.checklist td {
+    padding: 5px;
+    font-size: 15px;
 }
 
 .check {
-    color: green;
+    color: lightgreen;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: center;
+    width: 25px;
 }
+
 .buy {
     margin-top: auto;
     margin-bottom: 3vh;
