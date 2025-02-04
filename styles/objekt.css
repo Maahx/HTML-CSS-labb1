@@ -79,7 +79,7 @@ h1 {
   }
 .box{
     transition: transform 0.2s ease;
-    border: 2px solid black;
+    border: 2px solid grey;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -89,7 +89,7 @@ h1 {
 }
 .box:hover{
     transform: scale(1.05);
-    border: 2px solid white;
+    border: 2px solid black;
 }
 #box1 {
     background-color: #f0f0f0;
