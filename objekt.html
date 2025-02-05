@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="styles/objekt.css">
+    <link rel="stylesheet" href="styles/sitewide.css">
 </head>
 <body>
     <header>
-        
-        <nav>
+        <nav id="menu">
             <ul>
                 <li><a href="start.html"><img class="logo-img" src="images/bird-colorful-logo-gradient-vector_343694-1365.avif" alt="logo"></a></li>
-                <li><a href="objekt.html">Produkter</a></li>
+                <div class="dropdown">
+                    <button class="dropdown-knapp">Planer</button>
+                    <div class="dropdown-content">
+                      <a href="objekt.html">Alla planer</a>
+                      <a href="standard.html">Standard</a>
+                      <a href="premium.html">Premium</a>
+                      <a href="vip.html">VIP</a>
+                    </div>
+                </div>
                 <li><a href="kontakt.html">Kontakta oss</a></li>
             </ul>
         </nav>
@@ -46,7 +54,7 @@
                         </tr>
                     </table>
                     <p>Pris: <b>199kr/år</b></p>
-                    <a class="buy" href="objekt.html">Köp</a>
+                    <a class="buy" href="standard.html">Köp</a>
                 </li>
 
                 <li class="box" id="box2">
@@ -79,7 +87,7 @@
                         </tr>
                     </table>
                     <p>Pris: <b>299kr/år</b></p>
-                    <a class="buy" href="objekt.html">Köp</a>
+                    <a class="buy" href="premium.html">Köp</a>
                 </li>
 
                 <li class="box" id="box3">
@@ -120,7 +128,7 @@
                         </tr>
                     </table>
                         <p>Pris: <b>599kr/år</b></p>
-                        <a class="buy" href="objekt.html">Köp</a>
+                        <a class="buy" href="vip.html">Köp</a>
                     </li>
                 </ul>
                 </div>
