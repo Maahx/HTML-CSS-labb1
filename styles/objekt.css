@@ -1,214 +1,239 @@
+body {
+
+    font-family: 'Roboto', sans-serif; /*Textstilen*/
+    margin: 0; /* Tar bort alla marginaler runt elementet */
+    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
+    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
+    background-color: #f5f5f5; /* Lägger till en ljusgrå bakgrundsfärg */
+    padding-top: 2%; /* Lägger till en övre utfyllnad motsvarande 2% av förälderns höjd */    
+}
+header {
+    background-color: rgb(58, 58, 58); /* Lägger till en mörkgrå bakgrundsfärg */
+    position: fixed; /* Gör så att elementet är fast i förhållande till webbläsaren */
+    top: 0; /* Placerar elementet i toppen av webbläsaren */
+    width: 100vw; /* Sätter elementets bredd till 100% av webbläsarens bredd */
+    height: 16vh; /* Sätter elementets höjd till 16% av webbläsarens höjd */
+    z-index: 1000; /* Sätter elementets staplingsordning till 1000 */
+    display: flex; /* Gör så att elementet är en flex-container */
+    justify-content: space-between; /* Centrerar elementets barn horisontellt och lägger till mellanrum mellan dem */
+    align-items: center; /* Centrerar elementets barn vertikalt */
+    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
+    overflow: hidden; /* Tar bort allt innehåll som är större än elementets storlek */
+}
+nav ul {
+    display: flex; /* Gör så att elementet är en flex-container */
+    list-style: none; /* Tar bort punktlistan från elementet */
+    margin: 0; /* Tar bort alla marginaler runt elementet */
+    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
+}
+nav ul li {
+    margin-right: 0; /* Tar bort alla marginaler till höger om elementet */
+    flex: 1; /* Gör så att elementet tar upp all tillgänglig plats i flex-container */
+    display: flex; /* Gör så att elementet är en flex-container */
+}
+.logo-img {
+    width: 50px; /* Sätter elementets bredd till 50px */
+    height: 50px; /* Sätter elementets höjd till 50px */
+    margin-left: 0.5%; /* Lägger till en vänster marginal motsvarande 0.5% av förälderns bredd */
+}
+nav ul li:hover {
+    background-color: #333; /* Lägger till en mörkgrå bakgrundsfärg när muspekaren är över elementet */
+}
+nav ul li a {
+    display: flex; /* Gör så att elementet är en flex-container */
+    align-items: center; /* Centrerar elementets barn vertikalt */
+    justify-content: center; /* Centrerar elementets barn horisontellt */
+    width: 100%; /* Sätter elementets bredd till 100% av förälderns bredd */
+    height: 100%; /* Sätter elementets höjd till 100% av förälderns höjd */
+    padding: 20px; /* Lägger till en inre utfyllnad motsvarande 20px */
+    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
+    text-decoration: none; /* Tar bort understrykning från länken */
+    color: #ccc; /* Sätter textfärgen till ljusgrå */
+}
+nav ul li a:hover {
+    color: #fff; /* Sätter textfärgen till vit när muspekaren är över länken */
+    text-decoration: underline; /* Lägger till en understrykning på länken när muspekaren är över den */
+}
 h1 {
-    padding-top: 10vh;
-    text-align: center;
-    color: #333;
+    padding-top: 10vh;  /* Lägger till en övre utfyllnad motsvarande 10% av förälderns höjd */
+    text-align: center; /* Centrerar texten horisontellt */
+    color: #333; /* Sätter textfärgen till mörkgrå */
 }
 
 .container{
-    max-width: 980px;  
-    width: 100%;       
-    margin: 0 auto;    
-    padding: 20px;     
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: 980px; /* Sätter elementets maximala bredd till 980px */
+    width: 100%; /* Sätter elementets bredd till 100% av förälderns bredd */      
+    margin: 0 auto;  /* Centrerar elementet horisontellt */  
+    padding: 20px;     /* Lägger till en inre utfyllnad motsvarande 20px */
+    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
+    display: flex; /* Gör så att elementet är en flex-container */
+    flex-wrap: wrap; /* Gör så att elementets barn hamnar på flera rader när de inte får plats på en rad */
+    justify-content: center; /* Centrerar elementets barn horisontellt */
 }
 
 .produkter {
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    flex-direction: row; /* Lägger till en radriktning på flex-container */
+    list-style-type: none; /* Tar bort punktlistan från elementet */
+    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
+    display: flex; /* Gör så att elementet är en flex-container */
+    width: 100%; /*  Sätter elementets bredd till 100% av förälderns bredd */
+    justify-content: center; /* Centrerar elementets barn horisontellt */
   }
-  .box{
-    transition: transform 0.2s ease;
-    overflow-x: hidden;
-    overflow-y: scroll;
+
+.box{
+    transition: transform 0.2s ease; /* Lägger till en jämn övergångseffekt på transform-egenskapen */
+    border: 2px solid grey; /* Lägger till en 2px grå kant runt elementet */
+    overflow-x: hidden; /* Tar bort allt innehåll som är bredare än elementet */
+    overflow-y: scroll; /* Lägger till en vertikal scrollbar när innehållet är högre än elementet */
 }
 .box::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+    width: 0px;  /* Tar bort scrollbar från webkit-baserade webbläsare */
+    height: 0px;    /* Tar bort scrollbar från webkit-baserade webbläsare */
 }
 .box:hover{
-    transform: scale(1.05);
+    transform: scale(1.05); /* Förstorar elementet med 5% när muspekaren är över det */
+    border: 2px solid black; /* Lägger till en 2px svart kant runt elementet när muspekaren är över det */
 }
 #box1 {
-    background-color: #f0f0f0;
-    display: flex;
-    border: 2px solid grey;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 82vh;
-    width: 21vw;
-    text-align: center;
-    box-sizing: border-box;
+    background-color: #f0f0f0; /* Lägger till en ljusgrå bakgrundsfärg */
+    display: flex; /* Gör så att elementet är en flex-container */
+    flex-direction: column; /* Lägger till en kolumnriktning på flex-container */
+    justify-content: space-between; /* Centrerar elementets barn horisontellt och lägger till mellanrum mellan dem */
+    align-items: center; /* Centrerar elementets barn vertikalt */
+    height: 82vh; /* Sätter elementets höjd till 82% av förälderns höjd */
+    width: 21vw; /* Sätter elementets bredd till 21% av förälderns bredd */
+    text-align: center; /* Centrerar texten horisontellt */
+    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
 }
 #box2 {
-    background-color: #ebebeb;
-    display: flex;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 82vh;
-    width: 21vw;
-    text-align: center;
-    box-sizing: border-box;
+    background-color: #ebebeb; /* Lägger till en ljusgrå bakgrundsfärg */
+    display: flex; /* Gör så att elementet är en flex-container */
+    flex-direction: column; /* Lägger till en kolumnriktning på flex-container */
+    justify-content: space-between; /* Centrerar elementets barn horisontellt och lägger till mellanrum mellan dem */
+    align-items: center; /* Centrerar elementets barn vertikalt */
+    height: 82vh; /* Sätter elementets höjd till 82% av förälderns höjd */
+    width: 21vw; /* Sätter elementets bredd till 21% av förälderns bredd */
+    text-align: center; /* Centrerar texten horisontellt */
+    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
 }
 #box3 {
-    background-color: #e6e6e6;
-    display: flex;
-    border: 2px solid grey;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 82vh;
-    width: 21vw;
-    text-align: center;
-    box-sizing: border-box;
-}
-#box1:hover {
-    border: 2px solid black;
-}
-#box2:hover {
-    border: 2px solid black;
-}
-#box3:hover {
-    border: 2px solid black;
-}
-.info-box-title {
-    align-self: flex-start;
-    align-self: center;
+    background-color: #e6e6e6; /* Lägger till en ljusgrå bakgrundsfärg */
+    display: flex; /* Gör så att elementet är en flex-container */
+    flex-direction: column; /* Lägger till en kolumnriktning på flex-container */
+    justify-content: space-between; /* Centrerar elementets barn horisontellt och lägger till mellanrum mellan dem */
+    align-items: center; /* Centrerar elementets barn vertikalt */
+    height: 82vh; /* Sätter elementets höjd till 82% av förälderns höjd */
+    width: 21vw; /* Sätter elementets bredd till 21% av förälderns bredd */
+    text-align: center; /* Centrerar texten horisontellt */
+    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
 }
 
-.info-box-text {
-    width: 90%;
-    flex-grow: 1;
-    list-style: none;
-    text-align: left;
-    text-wrap: wrap;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.info-box-text li {
-    margin-bottom: 1%;
-    text-indent: -1.5rem;
-    padding-left: 1.5rem;
-}
-
-.check {
-    color: green;
-}
-.buy {
-    margin-top: auto;
-    margin-bottom: 3vh;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: rgb(58, 58, 58);
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.buy:hover {
-    box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.25);
-}
-
-.box img {
-    width: 80%;
-    max-width: 300px; 
-    height: auto;
-    border-radius: 15px; 
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(58, 58, 58);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-@media (max-width: 980px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .produkter {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .box {
-        width: 90%; 
-        height: auto; 
-    }
-}
-@media screen and (min-width: 1024px) {
-    header {
-        height: 9vh;
-    }
-
-    h1 {
-        padding-top: 5vh;
-    }
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(10vw, 20vw));
-        }
-    #box1 {
-            height: 65vh;
-            width: 20vw;
-    }
-    #box2 {
-            height: 65vh;
-            width: 20vw;
-    }
-    #box3 {
-            height: 65vh;
-            width: 20vw;
-    }
-    .buy{
-        width: 80%;
-    }
-  }
-
-  .checklist {
-    width: 90%;
-    border-collapse: collapse;
+.checklist {
+    width: 90%; /* Sätter elementets bredd till 90% av förälderns bredd */
+    border-collapse: collapse; /* Tar bort mellanrummet mellan cellerna */
 }
 
 .checklist tr {
-    display: flex;
-    align-items: center;
+    display: flex; /* Gör så att elementet är en flex-container */
+    align-items: center; /* Centrerar elementets barn vertikalt */
 }
 
 .checklist td {
-    padding: 5px;
-    font-size: 15px;
+    padding: 5px; /* Lägger till en inre utfyllnad motsvarande 5px */
+    font-size: 15px; /* Sätter textstorleken till 15px */
 }
 
 .check {
-    color: lightgreen;
-    font-size: 20px;
-    padding-right: 10px;
-    text-align: center;
-    width: 25px;
+    color: lightgreen; /* Sätter textfärgen till ljusgrön */
+    font-size: 20px; /* Sätter textstorleken till 20px */
+    padding-right: 10px; /* Lägger till en höger marginal motsvarande 10px */
+    text-align: center; /* Centrerar texten horisontellt */
+    width: 25px; /* Sätter elementets bredd till 25px */
+}  
+
+.buy {
+    margin-top: auto; /* Lägger till en övre marginal motsvarande allt tillgängligt utrymme */
+    margin-bottom: 3vh;     /* Lägger till en nedre marginal motsvarande 3% av förälderns höjd */
+    display: inline-block; /* Gör så att elementet är en block-container */
+    padding: 10px 20px; /* Lägger till en inre utfyllnad motsvarande 10px på toppen och botten och 20px på sidorna */
+    font-size: 16px; /* Sätter textstorleken till 16px */
+    color: #fff; /* Sätter textfärgen till vit */
+    background-color: rgb(58, 58, 58); /* Lägger till en mörkgrå bakgrundsfärg */
+    border: none; /* Tar bort kanten runt elementet */
+    border-radius: 4px; /* Lägger till en 4px rundning på hörnen */
+    text-align: center; /* Centrerar texten horisontellt */
+    text-decoration: none; /* Tar bort understrykning från länken */
+    cursor: pointer; /* Gör så att muspekaren blir en pekare när den är över elementet */
+} 
+
+.buy:hover {
+    box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.25); /* Lägger till en 2.5px skugga runt elementet när muspekaren är över det */
+}
+.box img {
+    width: 80%; /* Sätter elementets bredd till 80% av förälderns bredd */
+    max-width: 300px;  /* Sätter elementets maximala bredd till 300px */
+    height: auto; /* Sätter elementets höjd till automatisk */
+    border-radius: 15px;  /* Lägger till en 15px rundning på hörnen */
+}
+
+@media (max-width: 980px) { /* Media query för skärmar som är mindre än 980px breda */
+    .container {
+        flex-direction: column; /* Lägger till en kolumnriktning på flex-container */
+        align-items: center; /* Centrerar elementets barn vertikalt */
+    }
+
+    .produkter {
+        flex-direction: column;  /* Lägger till en kolumnriktning på flex-container */
+        align-items: center; /* Centrerar elementets barn vertikalt */
+    }
+
+    .box {
+        width: 90%;  /* Sätter elementets bredd till 90% av förälderns bredd */
+        height: auto;  /* Sätter elementets höjd till automatisk */
+    }
+}
+@media screen and (min-width: 1024px) { /* Media query för skärmar som är större än 1024px breda */
+    header {
+        height: 9vh; /* Sätter elementets höjd till 9% av förälderns höjd */
+    }
+
+    h1 {
+        padding-top: 5vh; /* Lägger till en övre utfyllnad motsvarande 5% av förälderns höjd */
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(10vw, 20vw)); /* Sätter grid-containerns kolumner till minst 10vw och högst 20vw breda */
+        }
+    #box1 {
+            height: 65vh; /* Sätter elementets höjd till 65% av förälderns höjd */
+            width: 20vw; /* Sätter elementets bredd till 20% av förälderns bredd */
+    }
+    #box2 {
+            height: 65vh; /* Sätter elementets höjd till 65% av förälderns höjd */
+            width: 20vw; /* Sätter elementets bredd till 20% av förälderns bredd */
+    } 
+    #box3 {
+            height: 65vh; /* Sätter elementets höjd till 65% av förälderns höjd */
+            width: 20vw; /* Sätter elementets bredd till 20% av förälderns bredd */
+    }
+    .buy{
+        width: 80%; /* Sätter elementets bredd till 80% av förälderns bredd */
+    }
+  }
+
+.checklist {
+    align-items: center; /* Centrerar elementets barn vertikalt */
+    list-style-type: none;   /* Tar bort punktlistan från elementet */
+    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
+}
+
+.checklist li {
+    display: flex;          /* Gör så att elementet är en flex-container */
+    align-items: center;   /* Centrerar elementets barn vertikalt */
+    margin: 10px 10px;    /* Lägger till en yttre utfyllnad motsvarande 10px på toppen och botten och 10px på sidorna */ 
+    font-size: 15px;     /* Sätter textstorleken till 15px */
 }
 
 .check { 
-    color: lightgreen;
+    color: lightgreen;      /* Sätter textfärgen till ljusgrön */
+
 }
