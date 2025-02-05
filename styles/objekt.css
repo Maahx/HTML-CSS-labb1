@@ -175,6 +175,7 @@ h1 {
     height: auto; /* Sätter elementets höjd till automatisk */
     border-radius: 15px;  /* Lägger till en 15px rundning på hörnen */
 }
+
 @media (max-width: 980px) { /* Media query för skärmar som är mindre än 980px breda */
     .container {
         flex-direction: column; /* Lägger till en kolumnriktning på flex-container */

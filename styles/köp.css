@@ -1,0 +1,110 @@
+/* css för titeln till sidan */
+h1 {
+    font-size: 2.5rem;
+    align-self: center;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    color: #333;
+}
+/* stil för containern */
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+}
+/* stil för boxen */
+.box{
+    transition: transform 0.2s ease;
+    overflow-x: scroll;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    width: 21vw;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* hover till boxen */
+.box:hover{
+    transform: scale(1.05);
+}
+/* stil till titeln i boxen */
+.info-box-title {
+    align-self: flex-start;
+    align-self: center;
+}
+/* stil till texten brevid boxen */
+.info-text {
+    width: 60%;
+    font-size: large;
+    flex-grow: 1;
+    list-style: none;
+    text-align: left;
+    text-wrap: wrap;
+    padding-left: 0;
+    margin-left: 0;
+}
+/* stil till list items, mest för att fixa indents */
+.info-text li {
+    margin-bottom: 1%;
+    text-indent: -1.5rem;
+    padding-left: 1.5rem;
+}
+/* färg till checken */
+.check {
+    color: green;
+}
+/* stil för bilden till boxen */
+.box-img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+/* stil för knappen */
+.köp-knapp {
+    margin-top: auto;
+    margin-bottom: 3vh;
+    display: inline-block;
+    padding: 10px 45px;
+    font-size: larger;
+    color: #fff;
+    background-color: rgb(12, 167, 7);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* hover till knappen */
+.köp-knapp:hover {
+background-color: rgb(15, 156, 10);
+}
+/* responsiv css för storleken på sidan */
+@media screen and (min-width: 1024px) {
+    header {
+        height: 9vh;
+    }
+
+    h1 {
+        padding-top: 5vh;
+    }
+
+    .box {
+        height: 45vh;
+        width: 20vw;
+    }
+
+    .köp-knapp {
+        padding: 20px 85px;
+    }
+  }

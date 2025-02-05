@@ -7,16 +7,25 @@
     <title>Product Page</title>
     <!-- Länkar till extern CSS-fil för styling -->
     <link rel="stylesheet" href="styles/objekt.css">
+    <link rel="stylesheet" href="styles/sitewide.css">
 </head>
 <body>
     <!-- Header-sektion som innehåller navigeringsmenyn -->
     <header>
-        <nav>
+        <nav id="menu">
             <ul>
                 <!-- Logotyp och navigationslänkar -->
 
                 <li><a href="start.html"><img class="logo-img" src="images/bird-colorful-logo-gradient-vector_343694-1365.avif" alt="logo"></a></li>
-                <li><a href="objekt.html">Produkter</a></li>
+                <div class="dropdown">
+                    <button class="dropdown-knapp">Planer</button>
+                    <div class="dropdown-content">
+                      <a href="objekt.html">Alla planer</a>
+                      <a href="standard.html">Standard</a>
+                      <a href="premium.html">Premium</a>
+                      <a href="vip.html">VIP</a>
+                    </div>
+                </div>
                 <li><a href="kontakt.html">Kontakta oss</a></li>
             </ul>
         </nav>
