@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="start.html"><img class="logo-img" src="/images/bird-colorful-logo-gradient-vector_343694-1365.avif" alt="logo"></a></li>
+                <li><a href="start.html"><img class="logo-img" src="images/bird-colorful-logo-gradient-vector_343694-1365.avif" alt="logo"></a></li>
                 <li><a href="objekt.html">Produkter</a></li>
                 <li><a href="kontakt.html">Kontakta oss</a></li>
             </ul>
@@ -19,19 +19,20 @@
     <main>
         <h1>Kontakta oss</h1>
        <div class="brodtext">
-            <p>Har du frågor om något vi säljer? <br>Lämna uppgifter nedan eller hör av dig på 
+            <p class="italic"><i>Har du frågor om något vi säljer?</i> <br>Lämna uppgifter nedan eller hör av dig på 
                 <br> Email: 
-                <a href="mailto:laboration@universitet.com"><span> Laboration@universtiet.com</span></a>
+                <a href="mailto:laboration@universitet.com"><span> Laboration@universitet.com</span></a>
                  eller <br>ring oss på
                 <a href="tel:123%456%7890"><span>+123 456 7890</span></a>
             </p>
-            <p>Besöksadress: <a href="adress"><span>Universitetsgatan 2, 651 88 Karlstad</span> 
-                <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.404375460015!2d13.57948830606541!3d59.406716009114334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20universitet!5e1!3m2!1ssv!2sse!4v1738070254297!5m2!1ssv!2sse" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+            <p>Besöksadress: <a href="https://www.google.se/maps/place/Karlstads+universitet/@59.406399,13.5800131,17z/data=!3m2!4b1!5s0x465cb13230ac0127:0x198e8760bdb3f433!4m6!3m5!1s0x465cb12dfeb2f6e3:0x4d3afe475254bf1e!8m2!3d59.406399!4d13.582588!16zL20vMDFmczJ5?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"><span>Universitetsgatan 2, 651 88 Karlstad</span></a>
+                <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1714.404375460015!2d13.57948830606541!3d59.406716009114334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20universitet!5e1!3m2!1ssv!2sse!4v1738070254297!5m2!1ssv!2sse" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </p>
             
        </div>
         <section>
             <div class="aside">
+                <br><br><br><br><br><br>
                 <h2>Ytterligare Information</h2>
                 <h3>Anställda</h3>
                 <p>Karl-Johan</p>
@@ -46,24 +47,35 @@
             </div>
             
         </section>
-        <!--<section>
-            <h2>Contact Form</h2>
+        <section class="formular">
+            <h2>Kontakt</h2>
             <form action="/submit-form" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required> <br><br>
                 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
                 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="number">Nummer:</label>
+                <input type="tel" id="number" name="number" required><br><br>
+
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <label for="individual">Vem vill du Kontakta</label><br><br>
+                <select type="select" id="individual" name="individual" required>
+                    <option value="all">Alla</option>
+                    <option value="Karl-Johan">Karl-Johan</option>
+                    <option value="Carl">Carl</option>
+                    <option value="Max">Max</option>
+                </select>
                 
-                <button type="submit">Send</button>
+                <button type="submit">Skicka</button>
             </form>
-        </section>-->
+        </section>
     </main>
     <footer>
         <p class="foot">&copy; 2025 Laboration 1</p>
     </footer>
 </body>
-</html></html>
+</html>

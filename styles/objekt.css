@@ -1,4 +1,6 @@
 body {
+
+    font-family: 'Roboto', sans-serif; /*Textstilen*/
     margin: 0; /* Tar bort alla marginaler runt elementet */
     padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
     box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
@@ -77,6 +79,7 @@ h1 {
     width: 100%; /*  Sätter elementets bredd till 100% av förälderns bredd */
     justify-content: center; /* Centrerar elementets barn horisontellt */
   }
+
 .box{
     transition: transform 0.2s ease; /* Lägger till en jämn övergångseffekt på transform-egenskapen */
     border: 2px solid grey; /* Lägger till en 2px grå kant runt elementet */
@@ -166,7 +169,6 @@ h1 {
 .buy:hover {
     box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.25); /* Lägger till en 2.5px skugga runt elementet när muspekaren är över det */
 }
-
 .box img {
     width: 80%; /* Sätter elementets bredd till 80% av förälderns bredd */
     max-width: 300px;  /* Sätter elementets maximala bredd till 300px */
@@ -232,4 +234,5 @@ h1 {
 
 .check { 
     color: lightgreen;      /* Sätter textfärgen till ljusgrön */
+
 }
