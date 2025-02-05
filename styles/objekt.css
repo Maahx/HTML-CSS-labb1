@@ -7,53 +7,7 @@ body {
     background-color: #f5f5f5; /* Lägger till en ljusgrå bakgrundsfärg */
     padding-top: 2%; /* Lägger till en övre utfyllnad motsvarande 2% av förälderns höjd */    
 }
-header {
-    background-color: rgb(58, 58, 58); /* Lägger till en mörkgrå bakgrundsfärg */
-    position: fixed; /* Gör så att elementet är fast i förhållande till webbläsaren */
-    top: 0; /* Placerar elementet i toppen av webbläsaren */
-    width: 100vw; /* Sätter elementets bredd till 100% av webbläsarens bredd */
-    height: 16vh; /* Sätter elementets höjd till 16% av webbläsarens höjd */
-    z-index: 1000; /* Sätter elementets staplingsordning till 1000 */
-    display: flex; /* Gör så att elementet är en flex-container */
-    justify-content: space-between; /* Centrerar elementets barn horisontellt och lägger till mellanrum mellan dem */
-    align-items: center; /* Centrerar elementets barn vertikalt */
-    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
-    overflow: hidden; /* Tar bort allt innehåll som är större än elementets storlek */
-}
-nav ul {
-    display: flex; /* Gör så att elementet är en flex-container */
-    list-style: none; /* Tar bort punktlistan från elementet */
-    margin: 0; /* Tar bort alla marginaler runt elementet */
-    padding: 0; /* Tar bort all inre utfyllnad (padding) från elementet */
-}
-nav ul li {
-    margin-right: 0; /* Tar bort alla marginaler till höger om elementet */
-    flex: 1; /* Gör så att elementet tar upp all tillgänglig plats i flex-container */
-    display: flex; /* Gör så att elementet är en flex-container */
-}
-.logo-img {
-    width: 50px; /* Sätter elementets bredd till 50px */
-    height: 50px; /* Sätter elementets höjd till 50px */
-    margin-left: 0.5%; /* Lägger till en vänster marginal motsvarande 0.5% av förälderns bredd */
-}
-nav ul li:hover {
-    background-color: #333; /* Lägger till en mörkgrå bakgrundsfärg när muspekaren är över elementet */
-}
-nav ul li a {
-    display: flex; /* Gör så att elementet är en flex-container */
-    align-items: center; /* Centrerar elementets barn vertikalt */
-    justify-content: center; /* Centrerar elementets barn horisontellt */
-    width: 100%; /* Sätter elementets bredd till 100% av förälderns bredd */
-    height: 100%; /* Sätter elementets höjd till 100% av förälderns höjd */
-    padding: 20px; /* Lägger till en inre utfyllnad motsvarande 20px */
-    box-sizing: border-box; /* Gör så att padding och border inkluderas i elementets totala bredd och höjd */
-    text-decoration: none; /* Tar bort understrykning från länken */
-    color: #ccc; /* Sätter textfärgen till ljusgrå */
-}
-nav ul li a:hover {
-    color: #fff; /* Sätter textfärgen till vit när muspekaren är över länken */
-    text-decoration: underline; /* Lägger till en understrykning på länken när muspekaren är över den */
-}
+
 h1 {
     padding-top: 10vh;  /* Lägger till en övre utfyllnad motsvarande 10% av förälderns höjd */
     text-align: center; /* Centrerar texten horisontellt */
@@ -193,9 +147,6 @@ h1 {
     }
 }
 @media screen and (min-width: 1024px) { /* Media query för skärmar som är större än 1024px breda */
-    header {
-        height: 9vh; /* Sätter elementets höjd till 9% av förälderns höjd */
-    }
 
     h1 {
         padding-top: 5vh; /* Lägger till en övre utfyllnad motsvarande 5% av förälderns höjd */

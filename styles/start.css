@@ -204,9 +204,6 @@ h1 {
 }
 /* responsiv css, storlek */
 @media screen and (min-width: 1024px) {
-    header {
-        height: 9vh;
-    }
 
     h1 {
         padding-top: 5vh;
