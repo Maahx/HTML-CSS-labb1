@@ -74,6 +74,7 @@ nav ul li a:hover {
 /* dropdown, relativ till dropdown containern */
 .dropdown {
     position: relative;
+    display: inline-block;
 }
   
 /* Css för dropdown knapp */
@@ -87,13 +88,10 @@ nav ul li a:hover {
     font-family: inherit;
     margin: 0;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-}
-  
-/* lägger till bakgrund till knappen vid hover */
-.dropdown-knapp:hover {
-    background-color: rgb(58, 58, 58);
+    justify-content: center;
 }
   
 /* Dropdown innehåll */
@@ -104,10 +102,13 @@ nav ul li a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
   
 /* Länkar i dropdownen */
-.dropdown-content a {
+.dropdown-content li a {
     float: none;
     color: #ccc;
     padding: 12px 16px;
@@ -117,13 +118,14 @@ nav ul li a:hover {
 }
   
 /* bakgrunds färg vid hover*/
-.dropdown-content a:hover {
+.dropdown-content li a:hover {
     background-color: #333;
 }
   
 /* Hover för att visa dropdown meny */
 .dropdown:hover .dropdown-content {
     display: block;
+    height: auto;
 }
 
 @media screen and (min-width: 1024px) {
